@@ -1,4 +1,4 @@
-with import <nixpkgs> {};
+{ stdenv, fetchurl, makeWrapper, perl, perlPackages }:
 let version = "1.7"; in
 stdenv.mkDerivation rec {
   name = "asql-${version}";
